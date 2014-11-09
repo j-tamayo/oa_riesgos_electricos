@@ -46,13 +46,24 @@
               
               <div id="principal" class="col-xs-12 jumbotron active-section">
 				<div class="row">
-					<center><p><b>Bienvenido</b></p></center>
-        			<img src="images/logo1.png" alt="..." class="img-rounded pull-right" width="25%" >
-				</div>
+					<div class ="col-xs-12 text-center"><h2><b>Bienvenidos al Objeto de Aprendizaje Riesgos El&eacute;ctricos</b></h2></div>
+                    
+				</div><br/>
+
+                <div class="row">
+                    <div class="col-xs-8">
+                        <p>El objetivo de este Objeto de Aprendizaje es concientizar a los estudiantes de Qu&iacute;mica de la Facultad de Ciencias de la UCV sobre los riesgos el&eacute;ctricos en los laboratorios, c&oacute;mo prevenirlos y qu&eacute; hacer si ocurren.</p>
+                        <p></p>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/brekera-cerrada.jpg" alt="Imagen de brekera cerrada" class="img-rounded pull-right" width="90%">
+                    </div>
+                </div>
 				
 				<div class="row">
-					<img src="images/logo2.png" alt="..." class="img-rounded col-xs-6 pull-left" width="50%" >
-					<img src="images/logo3.png" alt="..." class="img-rounded col-xs-6 pull-right" width="25%" >
+					
+                    <div class=="col-xs-6"><img src="images/2-equipos.jpg" alt="..." class="img-rounded pull-left" width="47%" ></div>
+					<div class="col-xs-6"><img src="images/tomac-balanzas.jpg" alt="..." class="img-rounded pull-right" width="100%" ></div>
 				</div>
               </div>
 
@@ -71,7 +82,7 @@
         				<p><b>Los accidentes el&eacute;ctricos se clasifican en:</b></p>
         				<p>Contacto el&eacute;ctrico directo: Es el contacto de personas con partes el&eacute;ctricamente activas de materiales
         				y equipos. Entre las afecciones m&aacute;s frecuentes, se encuentran:</p> 
-        				<center><a href="#">Ver Afecciones</a></center>
+        				<center><a id="activar_modal_afecciones" href="#">Ver Afecciones</a></center>
         				<br/>
         				<p>Contacto el&eacute;ctrico indirecto: Es el contacto de las personas con elementos conductores puestos 
         				accidentalmente bajo tensi&oacute;n por un fallo de aislamiento. En caso de contacto el&eacute;ctrico indirecto,
@@ -163,6 +174,52 @@
           </div>
 
         </div>
+
+        <div  id="afecciones" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Contacto Directo</h4>
+              </div>
+              <div class="modal-body">
+                <div id="directo_1">
+                  <div class="col-xs-12 text-center">Percepci&oacute;n</div>
+                  <div class="col-xs-12">
+                  </div>
+                  <div class="col-xs-12">
+                    El paso de corriente produce un cosquilleo. No existe peligro.
+                  </div>      
+                </div>
+                <div id="directo_2" style="display:none">
+                  <div class="col-xs-12 text-center">Electrizaci&oacute;n</div>
+                  <div class="col-xs-12">
+                  </div>
+                  <div class="col-xs-12">
+                    El paso de la corriente produce movimientos reflejos.
+                  </div>      
+                </div>
+                <div id="directo_3" style="display:none">
+                  <div class="col-xs-12 text-center">Tentanizaci&oacute;n </div>
+                  <div class="col-xs-12">
+                  </div>
+                  <div class="col-xs-12">
+                    Consiste en la anulaci&oacute;n de la capacidad de reacci&oacute;n muscular que impide la separaci&oacute;n voluntaria del punto de contacto el&eacute;ctrico
+                  </div>      
+                </div>
+                <br/>
+              </div>
+              <div class="modal-footer">
+                <div class="col-xs-6">
+                    <a href="#" sense="left" class="btn btn-primary col-xs-12 directo_change">Anterior</a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" sense="right" class="btn btn-primary col-xs-12 directo_change">Siguiente</a>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
 
