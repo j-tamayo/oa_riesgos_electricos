@@ -40,13 +40,13 @@ function change_section(section, sense){
 	$('#'+section+'_'+directo_curr).hide();
 	if(sense == 'right'){
 		directo_curr++;
-		if (directo_curr > 3)
+		if (directo_curr > 7)
 			directo_curr = 1;
 	}
 	else{
 		directo_curr--;
 		if (directo_curr<1){
-			directo_curr = 3;
+			directo_curr = 7;
 		}
 	}
 	$('#'+section+'_'+directo_curr).show();
