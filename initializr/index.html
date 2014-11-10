@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Riesgos El&eacute;ctricos</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,12 +21,15 @@
         <div class="container">
           
           <div class="header row">
+            <div class="col-xs-2">
+              <img src="images/logoucv.png" alt="Logo UCV" class="img-rounded img-modal" width="50%" >
+            </div>
             <div class="col-xs-5 col-xs-offset-1">
 				      <h1>Riesgos El&eacute;tricos</h1>
             </div>
 			
-      			<div class="col-xs-2 col-xs-offset-4 pull-right">
-      				<img src="images/electricidad1.png" alt="..." class="img-rounded pull-right" width="60%" >
+      			<div class="col-xs-2 col-xs-offset-2 pull-right">
+      				<img src="images/electricidad1.png" alt="Logo aplicacion" class="img-rounded pull-right" width="60%" >
       			</div>
           </div>
 		
@@ -82,17 +85,17 @@
         				<p><b>Los accidentes el&eacute;ctricos se clasifican en:</b></p>
         				<p>Contacto el&eacute;ctrico directo: Es el contacto de personas con partes el&eacute;ctricamente activas de materiales
         				y equipos. Entre las afecciones m&aacute;s frecuentes, se encuentran:</p> 
-        				<center><a id="activar_modal_afecciones" href="#">Ver Afecciones</a></center>
+        				<center><a id="activar_modal_afecciones_directo" href="#">Ver Afecciones</a></center>
         				<br/>
         				<p>Contacto el&eacute;ctrico indirecto: Es el contacto de las personas con elementos conductores puestos 
         				accidentalmente bajo tensi&oacute;n por un fallo de aislamiento. En caso de contacto el&eacute;ctrico indirecto,
         				las afecciones sobre la salud humana est&aacute;n generalmente asociadas a:</p>
-        				<center><a href="#">Ver Afecciones</a></center>
+        				<center><a id="activar_modal_afecciones_indirecto" href="#">Ver Afecciones</a></center>
         				<br/>
               </div>
 
               <div id="medidas" class="col-xs-12 jumbotron" style="display:none">
-                <div class="row">
+                <div id="medida_1" class="row">
         					<div class="col-xs-5">
         						<p>No utilizar cables defectuosos, clavijas de enchufe rotas, ni aparatos cuya carcasa presente desperfectos. 
         						Utilizar solamente aparatos perfectamente conectados.</p>
@@ -106,6 +109,83 @@
         						<img src="images/img3.png" alt="..." class="img-rounded pull-right" width="60%" >
         					</div>
 				        </div>
+
+                <div id="medida_2" class="row" style="display:none">
+                  <div class="col-xs-5">
+                    <p>No debe conectarse m&aacute;s de un aparato por enchufe. Si lo hacemos, el enchufe se calentar&aacute; m&aacute;s de lo debido y puede llegar a fundirse el pl&aacute;stico de su carcasa, con lo que se provocar&iacute;a un cortocircuito o incluso un incendio.</p>
+                  </div>
+            
+                  <!-- <div class="col-xs-3">
+                    <img src="images/flecha.png" alt="..." class="img-rounded pull-right" width="40%" >
+                  </div> -->
+            
+                  <div class="col-xs-7">
+                    <div class="col-xs-12">
+                      <img src="images/medida-2.jpg" alt="..." class="img-rounded img-modal" width="90%" >
+                    </div>
+                    <div class="col-xs-12">
+                      <img src="images/toma-sobrecargado.jpg" alt="..." class="img-rounded img-modal" width="90%" >
+                    </div>
+                  </div>
+                </div>
+
+                <div id="medida_3" class="row" style="display:none">
+                  <div class="col-xs-5">
+                    <p>Se debe tener especial cuidados con los equipos que utilizan corriente de 220 voltios, &eacute;stos deben estar aislados y no estar conectados junto con otros equipos a una misma toma de corriente.</p>
+                  </div>
+            
+                  <div class="col-xs-3">
+                    <img src="images/enchufe-220.jpg" alt="..." class="img-rounded pull-right" width="100%" >
+                  </div>
+            
+                  <div class="col-xs-4">
+                    <img src="images/fuente-de-poder.jpg" alt="..." class="img-rounded pull-right" width="72%" >
+                  </div>
+                </div>
+
+                <div id="medida_4" class="row" style="display:none">
+                  <div class="col-xs-6">
+                    <p>No mojar nunca intencionalmente los aparatos o instalaciones el&eacute;ctricas. En ambientes h&uacute;medos, como lavaderos, fosos y subterr&aacute;neos, aseg&uacute;rese con el especialista el&eacute;ctrico, de que las m&aacute;quinas el&eacute;ctricas y todos los elementos de la instalaci&oacute;n cumplen las normas de seguridad.</p>
+                  </div>
+            
+                  <!-- <div class="col-xs-3">
+                    <img src="images/flecha.png" alt="..." class="img-rounded pull-right" width="60%" >
+                  </div> -->
+            
+                  <div class="col-xs-6">
+                    <img src="images/instalacion-mojada.jpg" alt="..." class="img-rounded pull-right" width="60%">
+                  </div>
+                </div>
+
+                <div id="medida_5" class="row" style="display:none">
+                  <div class="col-xs-5">
+                    <p>Los cables de alimentaci&oacute;n deben manejarse con precauci&oacute;n. Hay que evitar pisarlos con veh&iacute;culos o que descansen sobre aristas vivas. Tambi&eacute;n hay que evitar tenerlos al descubierto y enredados.</p>
+                  </div>
+            
+                  <!-- <div class="col-xs-3">
+                    <img src="images/flecha.png" alt="..." class="img-rounded pull-right" width="60%" >
+                  </div> -->
+            
+                  <div class="col-xs-7">
+                    <div class="col-xs-12">
+                      <img src="images/cables-feos-1.jpg" alt="..." class="img-rounded pull-right" width="100%">
+                    </div>
+                  </div>
+                </div>
+
+                <div id="medida_6" class="row" style="display:none">
+                  <div class="col-xs-5">
+                    <p>No se manipular&aacute; el tablero el&eacute;ctrico. Si se necesita actuar sobre &eacute;l se avisar&aacute; al responsable del laboratorio. Mantener siempre todos los tableros el&eacute;ctricos cerrados. Todas las l&iacute;neas de entrada y salida a los cuadros el&eacute;ctricos estar&aacute;n perfectamente sujetas y aisladas.</p>
+                  </div>
+            
+                  <div class="col-xs-3">
+                    <img src="images/tablero-1.jpg" alt="..." class="img-rounded pull-right" width="100%" >
+                  </div>
+            
+                  <div class="col-xs-4">
+                    <img src="images/tablero-2.jpg" alt="..." class="img-rounded pull-right" width="100%">
+                  </div>
+                </div>
 			
         				<div class="row col-xs-12 embed-responsive embed-responsive-16by9">
         					<!--<center><iframe width="560" height="315" src="//www.youtube.com/embed/8PEPH0u4SgQ" frameborder="0" allowfullscreen></iframe></center>-->
@@ -113,8 +193,8 @@
 				
         				<div class="row col-xs-12">
         					<ul class="pager">
-        						<li class="previous pull-left"><a href="#">&larr; Older</a></li>
-        						<li class="next pull-right"><a href="#">Newer &rarr;</a></li>
+        						<li class="previous pull-left"><a sense="left" class="medida_change" href="#">&larr; Anterior</a></li>
+        						<li class="next pull-right"><a sense="right" class="medida_change" href="#">Siguiente &rarr;</a></li>
         					</ul>
         				</div>
               </div>
@@ -137,25 +217,29 @@
               
               <div id="creditos" class="col-xs-12 jumbotron" style="display:none">
                 <div class="row">
-        					<div class="col-xs-4">
-        						<img src="images/logoucv.png" alt="..." class="img-rounded pull-left" width="60%" >
+        					<div class="col-xs-6">
+        						<img src="images/logo-computacion-ciencias-ucv.jpg" alt="..." class="img-rounded pull-left" width="80%" >
         					</div>
         					
-        					<div class="col-xs-4">
-        						<img src="images/logo_computacion.png" alt="..." class="img-rounded" width="60%" >
+        					<!-- <div class="col-xs-3">
+        						<img src="images/logo-computacion.png" alt="..." class="img-rounded" width="70%" >
         					</div>
         					
-        					<div class="col-xs-4">
-        						<img src="images/logociens.png" alt="..." class="img-rounded pull-right" width="60%" >
-        					</div>
+        					<div class="col-xs-3">
+        						<img src="images/logociens.png" alt="..." class="img-rounded pull-right" width="70%" >
+        					</div> -->
+
+                  <div class="col-xs-6">
+                    <img src="images/logoquimica.png" alt="..." class="img-rounded pull-left" width="66%" >
+                  </div>
       				  </div>
 				
         				<div class="row col-xs-12">
         					<br/>
-        					<p><b>Proyecto O.A.</b></p>
+        					<p><b>Proyecto Objeto de Aprendizaje</b></p>
         					<p>Objeto de aprendizaje desarrollado por los alumnos de la escuela de computaci&oacute;n inscritos 
         					en la materia "Objetos de Aprendizaje: Aspectos Tenol&oacute;gicos y Pedag&oacute;gicos" con el fin 
-        					dar apoyo en la ense&ntilde;anza de los distintos tipos de riesgos electricos y de como prevenirlos.</p> 
+        					dar apoyo en la ense&ntilde;anza de los distintos tipos de riesgos el&eacute;ctricos y de como prevenirlos.</p> 
         					<br/>
         					<p><b>Desarrolladores:</b></p>
         					<p>Junior Pe&ntilde;a.</p>
@@ -165,6 +249,7 @@
         					<p><b>Profesores:</b></p>
         					<p>Yosly C. Hern&aacute;ndez B.</p>
         					<p>Franklin Sandoval.</p>
+                  <p>Jos&eacute; Chirinos.</p>
         					<br/>
         					<p>Facultad de Ciencias. Universidad Central de Venezuela.</p>
         				</div>
@@ -175,7 +260,7 @@
 
         </div>
 
-        <div  id="afecciones" class="modal fade">
+        <div  id="afecciones_directo" class="modal fade">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -183,61 +268,68 @@
                 <h4 class="modal-title">Contacto Directo</h4>
               </div>
               <div class="modal-body">
-                <div id="directo_1">
-                  <div class="col-xs-12 text-center">Percepci&oacute;n</div>
+                <div id="directo_1" class="row">
+                  <div class="col-xs-12 text-center"><b>Percepci&oacute;n</b></div><br/>
                   <div class="col-xs-12">
-
+                    <img src="images/percepcion.jpg" alt="percepcion" class="img-rounded img-responsive img-modal" width="100%">
                   </div>
+                  <br/><br/>
                   <div class="col-xs-12">
                     El paso de corriente produce un cosquilleo. No existe peligro.
                   </div>      
                 </div>
-                <div id="directo_2" style="display:none">
-                  <div class="col-xs-12 text-center">Electrizaci&oacute;n</div>
-                  <div class="col-xs-12">
+                <div id="directo_2" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Electrizaci&oacute;n</b></div><br/>
+                  <div class="col-xs-12 text-center">
+                    <img src="images/electrizacion.jpg" class="img-rounded img-responsive img-modal"  width="80%">
                   </div>
                   <div class="col-xs-12">
-                    El paso de la corriente produce movimientos reflejos.
+                    Es cuando el paso de la corriente produce movimientos reflejos en el organismo.
                   </div>      
                 </div>
-                <div id="directo_3" style="display:none">
-                  <div class="col-xs-12 text-center">Tentanizaci&oacute;n </div>
+                <div id="directo_3" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Tentanizaci&oacute;n</b></div>
                   <div class="col-xs-12">
+                    <img src="images/tetanizacion.jpg" class="img-rounded img-responsive img-modal"  width="80%">
                   </div>
                   <div class="col-xs-12">
                     Consiste en la anulaci&oacute;n de la capacidad de reacci&oacute;n muscular que impide la separaci&oacute;n voluntaria del punto de contacto el&eacute;ctrico
                   </div>      
                 </div>
-                <div id="directo_4" style="display:none">
-                  <div class="col-xs-12 text-center">Paro respiratorio y asfixia</div>
+                <div id="directo_4" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Paro respiratorio y asfixia</b></div>
                   <div class="col-xs-12">
+                    <img src="images/paro-respiratorio.gif" class="img-rounded img-responsive img-modal"  width="80%">
                   </div>
                   <div class="col-xs-12">
                     Se produce cuando la corriente el&eacute;ctrica atraviesa el t&oacute;rax e impide la acci&oacute;n de los m&uacute;sculos, los pulmones y la respiraci&oacute;n.
                   </div>      
                 </div>
-                <div id="directo_5" style="display:none">
-                  <div class="col-xs-12 text-center">Paro card&iacute;aco (Fibrilaci&oacute;n ventricular)</div>
+                <div id="directo_5" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Paro card&iacute;aco (Fibrilaci&oacute;n ventricular)</b></div>
                   <div class="col-xs-12">
+                    <img src="images/paro-cardiaco.jpg" class="img-rounded img-responsive img-modal"  width="90%">
                   </div>
                   <div class="col-xs-12">
                     Se produce cuando la corriente pasa por el coraz&oacute;n y su efecto en el organismo se traduce en un paro circulatorio por parada cardiaca.
                   </div>      
                 </div>
-                <div id="directo_6" style="display:none">
-                  <div class="col-xs-12 text-center">Quemaduras</div>
+                <div id="directo_6" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Quemaduras</b></div>
                   <div class="col-xs-12">
+                    <img src="images/quemadura.jpg" class="img-rounded img-responsive img-modal"  width="90%">
                   </div>
                   <div class="col-xs-12">
                     Puede provocar desde enrojecimiento de la piel e hinchaz&oacute;n de la zona donde se produjo el contacto hasta carbonizaci&oacute;n.
                   </div>      
                 </div>
-                <div id="directo_7" style="display:none">
-                  <div class="col-xs-12 text-center">Embolias</div>
+                <div id="directo_7" style="display:none" class="row">
+                  <div class="col-xs-12 text-center"><b>Embolias</b></div>
                   <div class="col-xs-12">
+                    <img src="images/embolia-img.jpg" class="img-rounded img-responsive img-modal"  width="90%">
                   </div>
                   <div class="col-xs-12">
-                    Es el paso de la corriente puede dar lugar a la aparici&oacute;n de co&aacute;gulos en la sangre que pueden obstruir alguna arteria.
+                    El paso de la corriente puede dar lugar a la aparici&oacute;n de co&aacute;gulos en la sangre que pueden obstruir alguna arteria.
                   </div>      
                 </div>
                 <br/>
@@ -254,6 +346,89 @@
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+        <div  id="afecciones_indirecto" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Contacto Indirecto</h4>
+              </div>
+              <div class="modal-body">
+                <div id="indirecto_1" class="row">
+                  <div class="col-xs-12 text-center">Reacci&oacute;n involuntaria</div>
+                  <div class="col-xs-12">
+                    
+                  </div>
+                  <div class="col-xs-12">
+                    Golpes del cuerpo humano contra objetos o ca&iacute;das. Ocasionados tras el contacto con la corriente.
+                  </div>      
+                </div>
+                <div id="indirecto_2" class="row" style="display:none">
+                  <div class="col-xs-12 text-center">Quemaduras debidas al arco el&eacute;ctrico</div>
+                  <div class="col-xs-12">
+                    <img src="images/containdirecto.jpg" class="img-rounded img-responsive img-modal"  width="90%">
+                  </div>
+                  <div class="col-xs-12">
+                    Pueden ser internas o externas por el paso de la intensidad de corriente a trav&eacute;s del cuerpo, o por proximidad al arco el&eacute;ctrico.
+                  </div>      
+                </div>
+                <br/>
+                <br/>
+              </div>
+              <div class="modal-footer">
+                <div class="col-xs-6">
+                    <a href="#" sense="left" class="btn btn-primary col-xs-12 indirecto_change">Anterior</a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" sense="right" class="btn btn-primary col-xs-12 indirecto_change">Siguiente</a>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div  id="result_modal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Resultado</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <h2>Tu resultado fue de</h2>
+                  </div>
+                </div> 
+                <div class="row">
+                  <div id="result_score" class="col-xs-12 text-center">
+                    
+                  </div>
+                </div>  
+                <div class="row">
+                  <div id="result_score" class="col-xs-12 text-center">
+                    <h4>¿Quieres enviar este resultado?</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="result_score" class="col-xs-12 text-center">
+                    <input class="col-xs-12" type="text" name="codigo-validacion" placeholder="Introduce el código de envío para enviar tu resultado"/>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="col-xs-6">
+                    <a href="#" data-dismiss="modal" class="btn btn-danger col-xs-12 indirecto_change">Cancelar</a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" id="send_result" class="btn btn-primary col-xs-12 indirecto_change">Enviar</a>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
 
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
 
