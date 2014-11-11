@@ -81,13 +81,13 @@ function change_medida(sense){
 	$('#medida_'+medida_curr).hide();
 	if(sense == 'right'){
 		medida_curr++;
-		if (medida_curr > 6)
+		if (medida_curr > 17)
 			medida_curr = 1;
 	}
 	else{
 		medida_curr--;
 		if (medida_curr<1){
-			medida_curr = 6;
+			medida_curr = 17;
 		}
 	}
 	$('#medida_'+medida_curr).show();
