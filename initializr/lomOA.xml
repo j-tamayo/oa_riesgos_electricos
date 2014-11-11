@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+<general>
+<title>
+<string language="es">Objeto de Aprendizaje Riesgos Eléctricos</string>
+</title>
+<language>
+es
+</language>
+<description>
+<string language="es">Es un Objeto de Aprendizaje de Contenido Abierto enfocado a concientizar a los estudiantes de Química de la Facultad de Ciencias de la UCV sobre los riesgos eléctricos en los laboratorios, cómo prevenirlos y qué hacer si ocurren.</string>
+</description>
+<keyword>
+<string language="es">Eléctricos</string>
+<string language="es">Electricidad</string>
+</keyword>
+</general>
+<lifeCycle>
+<version>
+<string language="es">1.0</string>
+</version>
+<status>
+<source>LOMv1.0</source>
+<value>final</value>
+</status>
+<contribute>
+<role>
+<source>LOMv1.0</source>
+<value>publisher</value>
+</role>
+<entity>
+BEGIN:VCARD
+VERSION:3.0
+FN:Escuela Quimica UCV
+EMAIL;TYPE=INTERNET:riesgos.electricos.ucv@gmail.com
+ORG:UCV
+END:VCARD</entity>
+<date>
+<dateTime>2014-11-11T00:00:00-04:30</dateTime>
+</date>
+</contribute>
+</lifeCycle>
+<technical>
+<format>
+Página web
+</format>
+<requirement>
+<orComposite>
+<type><source>LOMv1.0</source>
+<value>browser</value>
+</type>
+<name><source>LOMv1.0</source>
+<value>any</value>
+</name>
+</orComposite>
+</requirement>
+<otherPlatformRequirements>
+<string>Javascript</string>
+</otherPlatformRequirements>
+</technical>
+<educational>
+<interactivityType>
+<source>LOMv1.0</source>
+<value>mixed</value>
+</interactivityType>
+<learningResourceType>
+<source>LOMv1.0</source>
+<value>simulation</value>
+</learningResourceType>
+<interactivityLevel>
+<source>LOMv1.0</source>
+<value>medium</value>
+</interactivityLevel>
+<semanticDensity>
+<source>LOMv1.0</source>
+<value>medium</value>
+</semanticDensity>
+<intendedEndUserRole>
+<source>LOMv1.0</source>
+<value>learner</value>
+</intendedEndUserRole>
+<context>
+<source>LOMv1.0</source>
+<value>higher education</value>
+</context>
+<typicalAgeRange>
+<string language="es">19-30</string>
+</typicalAgeRange>
+<difficulty>
+<source>LOMv1.0</source>
+<value>easy</value>
+</difficulty>
+</educational>
+<rights>
+<cost>
+<source>LOMv1.0</source>
+<value>no</value>
+</cost>
+<copyrightAndOtherRestrictions>
+<source>LOMv1.0</source>
+<value>no</value>
+</copyrightAndOtherRestrictions>
+</rights>
+<classification>
+<purpose>
+<source>LOMv1.0</source>
+<value>educational objective</value>
+</purpose>
+</classification>
+</lom>

@@ -98,8 +98,8 @@ function calculate_result(q){
 	score = 0;
 	for(i=0;i<5;i++){
 		val_res = $('input[name="'+ar[i]+'"]:checked').val();
-		console.log(val_res);
-		console.log(q[ar[i]].answer);
+		/*console.log(val_res);
+		console.log(q[ar[i]].answer);*/
 		if(typeof val_res==='undefined'){
 			alert('Debes responder todas las preguntas');
 			send = false;
@@ -109,7 +109,7 @@ function calculate_result(q){
 			score+=20;
 		}
 	}
-	console.log(score);
+	/*console.log(score);*/
 	if(send){
 		$('#result_score').html('<h2>'+score+'/100'+'</h2>');
 		$('#result_modal').modal();
@@ -162,7 +162,7 @@ $(function(){
 	});
 
 	$('.medida_change').click(function(){
-		console.log(medida_curr);
+		/*console.log(medida_curr);*/
 		if ($(this).attr('sense') == 'right')
 			change_medida('right');
 		else
@@ -171,5 +171,25 @@ $(function(){
 
 	$(document).on('click', '#send_form', function(){
 		calculate_result(questions);
+	});
+
+	$('#send_result').click(function(){
+		/*console.log(score);*/
+		nombre = $('input[name="nombre-apellido"]').val();
+		cedula = $('input[name="ci"]').val();
+		codigo = $('input[name="codigo-validacion"]').val();
+		if (nombre!= '' && cedula!='' && codigo!=''){
+			/*console.log(nombre);*/
+			$('input[name="name"]').val(nombre);
+			$('input[name="puntaje"]').val(score);
+			$('input[name="cedula"]').val(cedula);
+			$('input[name="codigo"]').val(codigo);
+			
+			$('#result_form').submit();
+		}
+		else{
+			alert('Debe llenar todos los campos');
+		}
+		
 	});
 });

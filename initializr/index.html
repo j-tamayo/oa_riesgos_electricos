@@ -29,7 +29,12 @@
             </div>
 			
       			<div class="col-xs-2 col-xs-offset-2 pull-right">
-      				<img src="images/electricidad1.png" alt="Logo aplicacion" class="img-rounded pull-right" width="60%" >
+      				<div class="col-xs-12"><img src="images/electricidad1.png" alt="Logo aplicacion" class="img-rounded pull-right" width="70%" ></div>
+              <div class="col-xs-12" style="margin-top:4%;margin-bottom:4%;">
+                <a href="#" type="button" value="Ctrl-" ONCLICK="zoomin(0.9090909090);" class="btn btn-primary col-xs-5 col-xs-offset-1"><i class="glyphicon glyphicon-zoom-out"></i></a>
+                <a href="#" type="button" value="Ctrl+" ONCLICK="zoomin(1.1);" class="btn btn-primary col-xs-5 col-xs-offset-1"><i class="glyphicon glyphicon-zoom-in"></i></a>
+              </div>
+              <input type="hidden" value="1" id="zoomLevel">
       			</div>
           </div>
 		
@@ -326,6 +331,11 @@
         				</div>
               </div>
 
+              <form id="result_form" action="enviar_correo.php" method="post">
+              <input type="hidden" name="codigo" />
+              <input type="hidden" name="puntaje" />
+              <input type="hidden" name="name" />
+              <input type="hidden" name="cedula" />
               <div id="autoevaluacion" class="col-xs-12 jumbotron" style="display:none">
         				<!-- <center><p><b>PREGUNTA X</b></p>
         				
@@ -341,7 +351,8 @@
         					<li class="next pull-right"><a href="#">Newer &rarr;</a></li>
         				</ul> -->
               </div>
-              
+              </form>
+
               <div id="creditos" class="col-xs-12 jumbotron" style="display:none">
                 <div class="row">
         					<div class="col-xs-6">
@@ -538,8 +549,10 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div id="result_score" class="col-xs-12 text-center">
-                    <input class="col-xs-12" type="text" name="codigo-validacion" placeholder="Introduce el código de envío para enviar tu resultado"/>
+                  <div id="result_score" class="col-xs-6 col-xs-offset-3 text-center">
+                    <input class="col-xs-12" type="text" name="nombre-apellido" placeholder="Introduce tu nombre y apellido"/><br/><br/>
+                    <input class="col-xs-12" type="text" name="ci" placeholder="Introduce tu cédula"/><br/><br/>
+                    <input class="col-xs-12" type="text" name="codigo-validacion" placeholder="Introduce el código de envío"/>
                   </div>
                 </div>
               </div>
@@ -561,5 +574,16 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+            function zoomin(zoomLevel) {
+              zoomLevel = $('#zoomLevel').val() * zoomLevel;
+              $('#zoomLevel').val(zoomLevel);
+              document.body.style.zoom = (zoomLevel*100) + "%";
+            }
+        </script>
+
+        
+        
     </body>
 </html>
